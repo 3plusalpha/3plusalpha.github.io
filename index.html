@@ -69,7 +69,7 @@
         <li>webpack</li>
       </ul>
 
-      <h2>Tech stack</h2>
+      <h2>Private projects</h2>
       <ul>
         <li>hacking Amiga 600 in C</li>
         <li>
@@ -83,8 +83,10 @@
 
       <h2>Find me on</h2>
       <ul>
-        <li>linked in</li>
-        <li>twitter</li>
+        <li>
+          <a href="https://www.linkedin.com/in/martinmenzel/">linked in</a>
+        </li>
+        <li><a href="https://twitter.com/3plusalpha">twitter</a></li>
       </ul>
       <a href="mailto:martin/3plusalpha/com" id="contact"
         >martin/3plusalpha/com</a
@@ -93,9 +95,22 @@
     <script>
       const el = document.getElementById("contact");
       const content = el.textContent.replace("/", "@").replace("/", ".");
-      console.log(content);
       el.textContent = content;
       el.href = "mailto:" + content;
     </script>
   </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-32790839-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-32790839-1");
+  </script>
 </html>
