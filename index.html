@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin Menzel - Senior Software Engineer - Freelance</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h1,
+      h2 {
+        font-weight: 500;
+      }
+      h1,
+      h2,
+      a {
+        color: #004b9f;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h1,
+      #contact {
+        font-size: 2.25rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h1 span {
+        font-size: 1.125rem;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #content {
+        padding-top: 2rem;
+        max-width: 40rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Martin Menzel <span>Senior Software Engineer</span></h1>
+      <h2>10+ years experience</h2>
+      <p>
+        I am working for clients for a decade now and delivered web software
+        with client teams, solo, or my own freelance team.
+      </p>
+      <p>
+        I am good at single page applications, native apps, frontend
+        architecture, unit testing, and backend for frontend.
+      </p>
+      <p>I worked with eBay, Zalando, Pro7, Ada Health, Mercedes Benz, VW</p>
+      <h2>Tech stack</h2>
+      <ul>
+        <li>React</li>
+        <li>React Native</li>
+        <li>Node</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>various React libraries</li>
+        <li>various CSS toolings</li>
+        <li>various testing frameworks</li>
+        <li>webpack</li>
+      </ul>
+
+      <h2>Tech stack</h2>
+      <ul>
+        <li>hacking Amiga 600 in C</li>
+        <li>
+          Number translation app called
+          <a href="https://apps.apple.com/app/kazuo/id1196848892">Kazuo</a>
+        </li>
+        <li>Local product finder with app and backend (shut down)</li>
+        <li>Private teacher booking platform (shut down)</li>
+        <li>Manabu app (in development)</li>
+      </ul>
+
+      <h2>Find me on</h2>
+      <ul>
+        <li>linked in</li>
+        <li>twitter</li>
+      </ul>
+      <a href="mailto:martin/3plusalpha/com" id="contact"
+        >martin/3plusalpha/com</a
+      >
+    </div>
+    <script>
+      const el = document.getElementById("contact");
+      const content = el.textContent.replace("/", "@").replace("/", ".");
+      console.log(content);
+      el.textContent = content;
+      el.href = "mailto:" + content;
+    </script>
+  </body>
+</html>
